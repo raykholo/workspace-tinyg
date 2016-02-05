@@ -104,6 +104,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             var el = $('#' + this.id + '-billboard').clone();
             el.removeClass("hidden");
             el.find('.billboard-desc').text(this.desc);
+            console.log ("ray:  ", el);
             return el;
         },
         /**
