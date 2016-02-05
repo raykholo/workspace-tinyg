@@ -325,6 +325,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
         addBillboardToWorkspaceMenu: function() {
             // get copy of billboard
             var billboardEl = this.getBillboard();
+            alert (this.id);
             $('#' + this.id + ' .com-chilipeppr-ws-billboard').append(billboardEl);
         },
         /**
