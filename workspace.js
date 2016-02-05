@@ -764,7 +764,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                         // when a file is dropped so subscribe to it
                         // It also adds a hover class to the bound DOM elem
                         // so you can add CSS to hilite on hover
-                        dd.bind("#com-chilipeppr-ws-gcode-wrapper", null);
+                        dd.bind("#com-chilipeppr-ws-wrapper", null);
                         //$(".com-chilipeppr-elem-dragdrop").popover('show');
                         //dd.bind("#pnlWorkspace", null);
                         var ddoverlay = $('#com-chilipeppr-ws-gcode-dragdropoverlay');
