@@ -38,91 +38,122 @@
     <div id="com-chilipeppr-widget-flash-instance"></div>
 
     <div id="com-chilipeppr-workspace-tinyg" class="xhidden">
-        
-    <div id="com-chilipeppr-ws-wrapper" class="dropArea">
-        <div id="com-chilipeppr-ws-dragdropoverlay" class="hidden">
-            <div class="well">Drag and Drop Gcode Files Onto Browser Window</div>
-        </div>
 
-        <div class="container-fluid">
-            <div class="row">
+        <div id="com-chilipeppr-ws-wrapper" class="dropArea">
+            <div id="com-chilipeppr-ws-dragdropoverlay" class="hidden">
+                <div class="well">Drag and Drop Gcode Files Onto Browser Window</div>
+            </div>
 
-                <!-- Left Column -->
-                <!-- Change the width by adjusting col-md-4 to be col-md-3 for skinnier, or col-md-5 for wider -->
-                <!-- You must have all columns add up to 12 since we use bootstrap's col-md technique, i.e. col-md-2, col-md-7, col-md-3 adds to 12 -->
-                <div class="col-md-4 col-pad10">
+            <div class="container-fluid">
+                <div class="row">
 
-                    <div class="com-chilipeppr-ws-hdr well">
-                        
-                        Workspace - Sample
-
-                        <div class="com-chilipeppr-ws-menu pull-right">
-                            <div class="btn-group">
-                                <div class="dropdown">
-                                    <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                                    <ul class="dropdown-menu dropdown-menu-ws xdropdown-menu-right" role="menu">
-                                        <li class="com-chilipeppr-ws-menu-billboard" style="width:350px;">
-                                            <!-- Billboard -->
-                                            <div class="com-chilipeppr-ws-billboard">
-                                            </div>
-                                            <!-- End Billboard -->
-                                        </li>
+                    <!-- Left Column -->
+                    <!-- Change the width by adjusting col-md-4 to be col-md-3 for skinnier, or col-md-5 for wider -->
+                    <!-- You must have all columns add up to 12 since we use bootstrap's col-md technique, i.e. col-md-2, col-md-7, col-md-3 adds to 12 -->
+                    <div class="col-md-4 col-pad10">
+                        <div id="com-chilipeppr-3dviewer">Load 3D Viewport Here</div>
+                        <!-- Workspace Hdr -->
+                        <div class="com-chilipeppr-ws-hdr well">Workspace TinyG
 
 
-                                    </ul>
+
+                            <div class="com-chilipeppr-ws-menu pull-right">
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-menu-ws xdropdown-menu-right" role="menu">
+                                            <li class="com-chilipeppr-ws-menu-billboard" style="width:350px;">
+                                                <!-- Billboard -->
+                                                <div class="com-chilipeppr-ws-billboard">
+                                                </div>
+                                                <!-- End Billboard -->
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
+                        <!--end hdr well, time for widgets-->
+                        <!-- Zipwhip Text Messaging -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-zipwhip"></div>
+
+                        <!-- Auto Leveller -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-autolevel">Auto-Level Here</div>
+
+                        <!-- Macro -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-macro">Macro Here</div>
+
+                        <!-- JScut -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-jscut">Jscut Here</div>
+
+                        <!-- Laser Solder -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-lasersolder">Laser Solderer Here</div>
+
+                        <!-- Eagle BRD -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-eagle">Eagle BRD Here</div>
+
+                        <!-- GPIO -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-gpio">GPIO Here</div>
+
+                        <!-- shuttlexpress -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-shuttlexpress">ShuttleXpress Here</div>
+
+                        <!-- Touch Plate -->
+                        <div class="zhigh hidden" id="com-chilipeppr-ws-touchplate">Touch Plate Here</div>
+
+                        <!-- Arduino / Atmel Firmware Programmer -->
+                        <div class="zhigh xhidden" id="com-chilipeppr-ws-programmer">Arduino / Atmel Firmware Programmer Here</div>
+
+                        <!-- Gcode List -->
+                        <div id="com-chilipeppr-gcode-list" class="zhigh">Load Gcode List Here</div>
+                        <!-- Serial In/Out Text Log-->
+                        <div id="com-chilipeppr-serialport-log" class="zhigh">Load Serial Port Log Here</div>
+                        
+
+
 
                     </div>
 
-                    <div id="mywidget1-instance">
-                        <p class="sample">Widget 1 goes here</p>
+                    <!-- Center Column -->
+                    <div class="col-md-5 col-pad10">
+
+
                     </div>
 
-                    <div id="com-chilipeppr-widget-spconsole-instance">
-                        Serial Port Console goes here.
+                    <!-- Right Column -->
+                    <div class="col-md-3 col-pad10">
+
+
                     </div>
 
                 </div>
-
-                <!-- Center Column -->
-                <div class="col-md-5 col-pad10">
-                    
-                    
-                </div>
-
-                <!-- Right Column -->
-                <div class="col-md-3 col-pad10">
-                    
-                    
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Keep this div hidden so it can be cloned and used by the Javascript -->
-    <div id="com-chilipeppr-workspace-sample-billboard" class="hidden">
-        <div class="billboard-content">
-            <h4 class="billboard-title" style="">Sample Workspace</h4>
+        <!-- Keep this div hidden so it can be cloned and used by the Javascript -->
+        <div id="com-chilipeppr-workspace-tinyg-billboard" class="hidden">
+            <div class="billboard-content">
+                <h4 class="billboard-title" style="">TinyG Workspace</h4>
 
-            <p class="billboard-url" style=""><a href="http://chilipeppr.com/sample">chilipeppr.com/sample</a>
+                <p class="billboard-url" style=""><a href="http://chilipeppr.com/TinyG">chilipeppr.com/tinyg</a>
 
-            </p>
-            <div class="billboard-imgcontain" style="">
-                <a href="http://chilipeppr.com/sample">
-                    <div class="billboard-img" style="background-image: url('https://github.com/chilipeppr/workspace-sample/raw/master/billboard.png')" />
-                </a>
-                <div class="billboard-stats2">
+                </p>
+                <div class="billboard-imgcontain" style="">
+                    <a href="http://chilipeppr.com/tinyg">
+                        <div class="billboard-img" style="background-image: url('http://github.com/chilipeppr/workspace-sample/raw/master/billboard.png')" />
+                    </a>
+                    <div class="billboard-stats2">
+                    </div>
+
                 </div>
-
+                <p class="billboard-desc">
+                    A ChiliPeppr Workspace that lets you do stuff.
+                </p>
             </div>
-            <p class="billboard-desc">
-                A ChiliPeppr Workspace that lets you do stuff.
-            </p>
         </div>
-    </div>
 
 </body>
 

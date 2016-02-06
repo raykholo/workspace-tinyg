@@ -114,7 +114,6 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
         addBillboardToWorkspaceMenu: function() {
             // get copy of billboard
             var billboardEl = this.getBillboard();
-            alert (this.id);
             $('#' + this.id + ' .com-chilipeppr-ws-billboard').append(billboardEl);
         },
         /**
@@ -767,7 +766,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                         dd.bind("#com-chilipeppr-ws-wrapper", null);
                         //$(".com-chilipeppr-elem-dragdrop").popover('show');
                         //dd.bind("#pnlWorkspace", null);
-                        var ddoverlay = $('#com-chilipeppr-ws-gcode-dragdropoverlay');
+                        var ddoverlay = $('#com-chilipeppr-ws-dragdropoverlay');
                         chilipeppr.subscribe("/com-chilipeppr-elem-dragdrop/ondragover", function() {
                             //console.log("got dragdrop hover");
                             ddoverlay.removeClass("hidden");
