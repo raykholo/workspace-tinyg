@@ -254,7 +254,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                     require(["inline:com-chilipeppr-elem-zipwhip"], function(zipwhip) {
                         zipwhip.init();
                         // setup toggle button
-                        var zwBtn = $('#com-chilipeppr-ws-gcode-menu .zipwhip-button');
+                        var zwBtn = $('#com-chilipeppr-ws-menu .zipwhip-button');
                         var zwDiv = $('#com-chilipeppr-ws-zipwhip');
                         zwBtn.click(function() {
                             if (zwDiv.hasClass("hidden")) {
@@ -281,7 +281,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                     require(["inline:com-chilipeppr-widget-autolevel"], function(autolevel) {
                         autolevel.init();
                         // setup toggle button
-                        var alBtn = $('#com-chilipeppr-ws-gcode-menu .autolevel-button');
+                        var alBtn = $('#com-chilipeppr-ws-menu .autolevel-button');
                         var alDiv = $('#com-chilipeppr-ws-autolevel');
                         alBtn.click(function() {
                             if (alDiv.hasClass("hidden")) {
@@ -312,7 +312,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                     cprequire(["inline:com-chilipeppr-widget-macro"], function(macro) {
                         macro.init();
                         // setup toggle button
-                        var alBtn = $('#com-chilipeppr-ws-gcode-menu .macro-button');
+                        var alBtn = $('#com-chilipeppr-ws-menu .macro-button');
                         var alDiv = $('#com-chilipeppr-ws-macro');
                         alBtn.click(function() {
                             if (alDiv.hasClass("hidden")) {
@@ -339,10 +339,10 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 "#com-chilipeppr-ws-jscut",
                 "http://raw.githubusercontent.com/chilipeppr/widget-jscut/master/auto-generated-widget.html",
                 function() {
-                    require(["inline:org-jscut-gcode-widget"], function(jscut) {
+                    require(["inline:org-jscut-widget"], function(jscut) {
                         jscut.init();
                         // setup toggle button
-                        var alBtn = $('#com-chilipeppr-ws-gcode-menu .jscut-button');
+                        var alBtn = $('#com-chilipeppr-ws-menu .jscut-button');
                         var alDiv = $('#com-chilipeppr-ws-jscut');
                         alBtn.click(function() {
                             if (alDiv.hasClass("hidden")) {
@@ -371,7 +371,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                         ls.init();
                         ls.unactivateWidget();
                         // setup toggle button
-                        var alBtn = $('#com-chilipeppr-ws-gcode-menu .lasersolder-button');
+                        var alBtn = $('#com-chilipeppr-ws-menu .lasersolder-button');
                         var alDiv = $('#com-chilipeppr-ws-lasersolder');
                         alBtn.click(function() {
                             if (alDiv.hasClass("hidden")) {
@@ -403,7 +403,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 eagleDiv: null,
                 eagleInstance: null,
                 init: function() {
-                    this.eagleBtn = $('#com-chilipeppr-ws-gcode-menu .eagle-button');
+                    this.eagleBtn = $('#com-chilipeppr-ws-menu .eagle-button');
                     this.eagleDiv = $('#com-chilipeppr-ws-eagle');
                     this.setupDragDrop();
                     this.setupBtn();
@@ -516,12 +516,12 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 onDragOver: function() {
                     console.log("onDragOver");
                     $('#com-chilipeppr-widget-eagle').addClass("panel-primary");
-                    $('#com-chilipeppr-ws-gcode-menu .eagle-button').addClass("btn-primary");
+                    $('#com-chilipeppr-ws-menu .eagle-button').addClass("btn-primary");
                 },
                 onDragLeave: function() {
                     console.log("onDragLeave");
                     $('#com-chilipeppr-widget-eagle').removeClass("panel-primary");
-                    $('#com-chilipeppr-ws-gcode-menu .eagle-button').removeClass("btn-primary");
+                    $('#com-chilipeppr-ws-menu .eagle-button').removeClass("btn-primary");
                 },
             };
             eagleObj.init();
@@ -537,7 +537,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 gpioDiv: null,
                 gpioInstance: null,
                 init: function() {
-                    this.gpioBtn = $('#com-chilipeppr-ws-gcode-menu .gpio-button');
+                    this.gpioBtn = $('#com-chilipeppr-ws-menu .gpio-button');
                     this.gpioDiv = $('#com-chilipeppr-ws-gpio');
                     this.setupBtn();
                     console.log("done instantiating GPIO add-on widget");
@@ -610,7 +610,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 div: null,
                 instance: null,
                 init: function() {
-                    this.btn = $('#com-chilipeppr-ws-gcode-menu .' + this.id + '-button');
+                    this.btn = $('#com-chilipeppr-ws-menu .' + this.id + '-button');
                     this.div = $('#com-chilipeppr-ws-' + this.id + '');
                     this.setupBtn();
                     console.log('done instantiating ' + this.id + ' add-on widget');
@@ -675,7 +675,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 touchPlateDiv: null,
                 touchPlateInstance: null,
                 init: function() {
-                    this.touchPlateBtn = $('#com-chilipeppr-ws-gcode-menu .touchplate-button');
+                    this.touchPlateBtn = $('#com-chilipeppr-ws-menu .touchplate-button');
                     this.touchPlateDiv = $('#com-chilipeppr-ws-touchplate');
                     this.setupBtn();
                     console.log("done instantiating touchPlate add-on widget");
@@ -742,7 +742,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
         require(["inline:com-chilipeppr-widget-programmer"], function (programmer) {
             programmer.init();
             // setup toggle button
-            var btn = $('#com-chilipeppr-ws-gcode-menu .programmer-button');
+            var btn = $('#com-chilipeppr-ws-menu .programmer-button');
             var div = $('#com-chilipeppr-ws-programmer');
             btn.click(programmer.show.bind(programmer));
         })  
